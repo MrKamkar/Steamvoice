@@ -1,0 +1,36 @@
+﻿<Application x:Class="Steamvoice.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Steamvoice"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <LinearGradientBrush x:Key="steamBackground" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Offset="0" Color="#1b2838"/>
+            <GradientStop Offset="1" Color="#2a475e"/>
+        </LinearGradientBrush>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Global Sans Serif" />
+        </Style>
+        <Style x:Key="keyLabels" TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+            <Setter Property="Margin" Value="15 0 0 0" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#171a21" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Global Sans Serif" />
+            <Setter Property="Padding" Value="10" />
+        </Style>
+        <Style x:Key="menuButtons" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="Margin" Value="0 3" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+        <Style x:Key="keyButtons" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="Height" Value="40" />
+            <Setter Property="MinWidth" Value="40" />
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+    </Application.Resources>
+</Application>
